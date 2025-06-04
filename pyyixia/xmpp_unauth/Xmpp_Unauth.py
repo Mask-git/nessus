@@ -267,7 +267,7 @@ def check_xmpp_anonymous_login(target_ip, port=5222, timeout=10, verbose=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="XMPP匿名登录检测工具")
-    parser.add_argument("target_ip", help="目标IP地址")
+    parser.add_argument("target_ip", help="目标IP地址,基础使用直接python Xmpp_Unauth.py ip,直接使用无需-p,-v,-t")
     parser.add_argument("-p", "--port", type=int, default=5222, help="端口号（默认5222）")
     parser.add_argument("-v", "--verbose", action="store_true", help="显示详细输出")
     parser.add_argument("-t", "--timeout", type=int, default=10, help="超时时间（秒）")
